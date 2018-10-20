@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+
+{{ basics.name }}
+<hr />
+
+<section>
+{# if future #}
+Upcoming event || 
+{# else #}
+Latest event
+
+<h2>{{ events[0].name }}</h2>
+<date>{{ events[0].date }}</date>
+<p>{{ events[0].description }}</p>
+<a href="{{ events[0].description }}" target="_blank">More information and sign up</a>
+</section>
