@@ -2,17 +2,52 @@
 layout: layouts/base.njk
 ---
 
-{{ basics.name }}
+<header>
+  {{ basics.name }}
+
+  {% if events[0].date | isFutureDate %}
+    {% if events[0].url %}
+      <a href="{{ events[0].url }}">Join us at the next meetup</a>
+    {% endif %}
+ 
+  {% endif %}
+
+</header>
+
 <hr />
 
 <section>
-{# if future #}
-Upcoming event || 
-{# else #}
-Latest event
 
-<h2>{{ events[0].name }}</h2>
-<date>{{ events[0].date }}</date>
-<p>{{ events[0].description }}</p>
-<a href="{{ events[0].description }}" target="_blank">More information and sign up</a>
+  {% if events[0].date | isFutureDate %}
+    Upcoming event
+  {% else %}
+    Latest event
+  {% endif %}
+
+  <h2>{{ events[0].name }}</h2>
+  <date>{{ events[0].date }}</date>
+  <p>{{ events[0].description }}</p>
+  {% if events[0].url %}
+    <a href="{{ events[0].url }}" target="_blank">More information and sign up</a>
+  {% endif %}
+</section>
+
+<section>
+
+  Previous events
+
+  <ul>
+  {% set len = events.length %} 
+  {% for i in range(1, len) %}
+    <li>
+      {{ events[i].name }}
+      {{ events[i].date }}
+      {% if events[i].url %}
+        <a href="{{ events[i].url }}" target="_blank">See more</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+    
+  </ul>
+
 </section>

@@ -1,4 +1,10 @@
-module.exports = function (elevntyConfig) {
+const { DateTime } = require("luxon");
+
+module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addFilter("isFutureDate", (dateObj)=> {
+    return DateTime.fromISO(dateObj) > DateTime.local()
+  })
 
   return {
     templateFormats: ["html", "njk"],
