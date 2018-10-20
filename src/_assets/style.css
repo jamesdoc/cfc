@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  color: #372696;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cfc-header {
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(48,35,174,0.8) 0%,rgba(200,109,215,0.8) 100%), url(image.jpg); 
+  background-size: cover;
+  min-height: 33.33333vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.cfc-header img {
+  max-width: 150px;
+}
+
+.cfc-header h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cfc-header a {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.cfc-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cfc-events section {
+  padding: 2px 20px;
+}
+
+.cfc-events section date {
+  display: block;
+}
+
+.cfc-events section:first-child {
+  border-right: 1px solid #372696;
+}
+
+.cfc-events h2 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cfc-events h3 {
+  font-size: 1.17em;
+  margin: 1.17em 0 0;
+}

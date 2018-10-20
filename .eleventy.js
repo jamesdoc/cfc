@@ -6,6 +6,12 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromISO(dateObj) > DateTime.local()
   })
 
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return DateTime.fromISO(dateObj).toFormat("dd LLLL yyyy");
+  });
+
+  eleventyConfig.addPassthroughCopy("src/_assets");
+
   return {
     templateFormats: ["html", "njk"],
     pathPrefix: "/",
