@@ -20,3 +20,7 @@ Add new events at the top in the format:
 This is built on top of [Eleventy](https://www.11ty.io) because it is great.
 
 Run the dev server: `npm run dev`
+
+## Deploy
+
+Run the dev server: `npm run deploy`
