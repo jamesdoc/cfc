@@ -83,6 +83,10 @@ a:hover {
   padding: 0;
 }
 
+.cfc-footer {
+  padding: 1rem;
+  font-size: 0.725rem;
+}
 
 @media (min-width: 800px) {
   .cfc-header {
@@ -107,5 +111,10 @@ a:hover {
   .cfc-events section:first-child {
     border-right: 1px solid #372696;
     border-bottom: none;
+  }
+
+  .cfc-footer {
+    padding-top: 5rem;
+    text-align: center;
   }
 }
