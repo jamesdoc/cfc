@@ -7,15 +7,26 @@ body {
   padding: 0;
 }
 
+a {
+  color: #a65dae;
+  text-decoration: none;
+  border-bottom: 1px solid #372696;
+  transition: border .5s;
+}
+
+a:hover {
+  border-bottom-color: #a65dae;
+}
+
 .cfc-header {
-  color: #ffffff;
   background: linear-gradient(135deg, rgba(48,35,174,0.8) 0%,rgba(200,109,215,0.8) 100%), url(image.jpg); 
   background-size: cover;
-  min-height: 33.33333vh;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 2em;
+  min-height: 20vh;
+  padding: 1rem;
 }
 
 .cfc-header img {
@@ -23,7 +34,7 @@ body {
 }
 
 .cfc-header h1 {
-  font-size: 4em;
+  font-size: 2em;
   font-weight: bold;
   margin: 0;
 }
@@ -34,27 +45,25 @@ body {
 }
 
 .container {
-  max-width: 1020px;
   margin: 0 auto;
-  padding: 0 10px;
+  max-width: 1020px;
   width: 100%;
 }
 
 .cfc-events {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
 }
 
 .cfc-events section {
-  padding: 2px 20px;
+  padding: 1rem;
+}
+
+.cfc-events section:first-child {
+  border-bottom: 1px solid #372696;
 }
 
 .cfc-events section date {
   display: block;
-}
-
-.cfc-events section:first-child {
-  border-right: 1px solid #372696;
 }
 
 .cfc-events h2 {
@@ -67,4 +76,36 @@ body {
 .cfc-events h3 {
   font-size: 1.17em;
   margin: 1.17em 0 0;
+}
+
+.cfc-events-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@media (min-width: 800px) {
+  .cfc-header {
+    margin-bottom: 2em;
+    min-height: 33.33333vh;
+    text-align: center;
+  }
+
+  .cfc-header h1 {
+    font-size: 4em;
+  }
+
+  .cfc-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cfc-events section {
+    padding: 2px 1rem;
+  }
+
+  .cfc-events section:first-child {
+    border-right: 1px solid #372696;
+    border-bottom: none;
+  }
 }
