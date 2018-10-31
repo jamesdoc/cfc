@@ -2,24 +2,7 @@
 layout: layouts/base.njk
 ---
 
-<header class="cfc-header">
-
-  <div class="container">
-
-    <img src="_assets/logo.svg" alt="" />
-    <h1>{{ basics.name }}</h1>
-
-    {% if events[0].date | isFutureDate %}
-      {% if events[0].url %}
-        <a href="{{ events[0].url }}">Join us at the next meetup</a>
-      {% endif %}
-    {% endif %}
-
-  </div>
-
-</header>
-
-<div class="container cfc-events">
+<div class="cfc-events">
 
   <section>
 
@@ -67,16 +50,3 @@ layout: layouts/base.njk
 
 </div>
 
-<footer class="cfc-footer">
-  <div class="container">
-    <p>
-      <a href="{{ basics.facebook }}" target="_blank" rel="noopener">Join the Facebook Group</a>
-    </p>
-    <p>
-      Site built (super) quickly at <a href="https://kingdomcode.uk/build" target="_blank" rel="noopener">Kingdom Code BUILD 2018</a> | <a href="https://github.com/jamesdoc/cfc" target="_blank" rel="noopener">View Source</a>
-    </p>
-    <p>
-      Last updated: {{ data.today }}
-    </p>
-  </div>
-</footer>
