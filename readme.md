@@ -27,6 +27,13 @@ You'll now have a local server running at [http://localhost:8080](http://localho
 
 This is built on top of [Eleventy](https://www.11ty.io) because it is great. One of the nice things about 11ty is it's [super simple documentation](https://www.11ty.io/docs/).
 
+### ToDo
+
+- [x] Add Facebook Group to the footer
+- [ ] Add photo gallery from the group
+- [ ] Return responsive images
+- [ ] Return the events with [event schema](https://schema.org/Event)
+
 ## Deploy
 
 The site is hosted with [Surge](https://surge.sh/). It is also great. You can deploy from the command line too with the line:
