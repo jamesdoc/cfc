@@ -56,7 +56,7 @@ layout: layouts/base.njk
         <h3>{{ events[i].name }}</h3>
         <date>{{ events[i].date | readableDate }}</date>
         {% if events[i].url %}
-          <a href="{{ events[i].url }}" target="_blank">See more</a>
+          <a href="{{ events[i].url }}"  target="_blank" rel="noopener">See more</a>
         {% endif %}
       </li>
     {% endfor %}
@@ -70,7 +70,10 @@ layout: layouts/base.njk
 <footer class="cfc-footer">
   <div class="container">
     <p>
-      Site built (super) quickly at <a href="https://kingdomcode.uk/build">Kingdom Code BUILD 2018</a> | <a href="https://github.com/jamesdoc/cfc">View Source</a>
+      <a href="https://www.facebook.com/groups/christianfilmmakerscollective" target="_blank" rel="noopener">Join the Facebook Group</a>
+    </p>
+    <p>
+      Site built (super) quickly at <a href="https://kingdomcode.uk/build" target="_blank" rel="noopener">Kingdom Code BUILD 2018</a> | <a href="https://github.com/jamesdoc/cfc" target="_blank" rel="noopener">View Source</a>
     </p>
     <p>
       Last updated: {{ data.today }}
