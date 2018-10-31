@@ -88,6 +88,17 @@ a:hover {
   font-size: 0.725rem;
 }
 
+.cfc-footer__social {
+  display: flex;
+  flex-direction: row;
+}
+
+.cfc-footer__social img {
+  height: 16px;
+  margin-right: 5px;
+  width: 16px;
+}
+
 @media (min-width: 800px) {
   .cfc-header {
     margin-bottom: 2em;
@@ -116,5 +127,9 @@ a:hover {
   .cfc-footer {
     padding-top: 5rem;
     text-align: center;
+  }
+
+  .cfc-footer__social {
+    justify-content: center;
   }
 }
