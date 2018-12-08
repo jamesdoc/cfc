@@ -32,7 +32,7 @@ This is built on top of [Eleventy](https://www.11ty.io) because it is great. One
 - [x] Add Facebook Group to the footer
 - [ ] Add photo gallery from the group
 - [ ] Return responsive images
-- [ ] Return the events with [event schema](https://schema.org/Event)
+- [x] Return the events with [event schema](https://schema.org/Event)
 
 ## Deploy
 
