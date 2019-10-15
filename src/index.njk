@@ -16,6 +16,15 @@ layout: layouts/base.njk
 
     <h3 itemprop="name">{{ events[0].name }}</h3>
     <date itemprop="startDate" content="{{ events[0].date }}">{{ events[0].date | readableDate }}</date>
+    
+    {% if events[0].address %}
+    <span itemprop="address">
+      <a href="https://www.google.com/maps/place/{{ events[0].address }}" target="_blank" rel="noopener">
+        {{ events[0].address }}
+      </a>
+    </span><br />
+    {% endif %}
+
     <p itemprop="description">{{ events[0].description }}</p>
     {% if events[0].url %}
       <a href="{{ events[0].url }}" target="_blank" rel="noopener" itemprop="url">
