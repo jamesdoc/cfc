@@ -10,6 +10,7 @@ Add new events at the top in the format:
   {
     "name": "Christian Filmmakers Collective #03",
     "date": "2018-10-18",
+    "address": "GlobeSpace, 140-148 Borough High Street",
     "url": "https://attending.io/events/christian-filmmakers-collective-03",
     "description": "You're invited to an evening with Vanessa Bailey hearing about her work as a Christian who's an actor, director and producer making short films"
   },
